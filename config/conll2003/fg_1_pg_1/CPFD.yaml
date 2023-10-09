@@ -1,0 +1,38 @@
+### Model
+is_load_ckpt_if_exists: True
+is_load_common_first_model: True
+dropout: 0
+hidden_dim: 768
+
+### Data
+data_path: [datasets/NER_data/conll2003]
+n_samples: -1
+schema: BIO
+is_load_disjoin_train: True
+
+### Training
+batch_size: 8
+max_seq_length: 512
+
+lr: 2e-3  # last lr is 4e-4
+stable_lr: 4e-4
+
+schedule: (5,)
+gamma: 0.2
+
+first_training_epochs: 10
+training_epochs: 10
+evaluate_interval: 1
+info_per_epochs: 1
+early_stop: 100
+
+### CL
+nb_class_pg: 1
+nb_class_fg: 1
+
+is_rescale_new_weight: True
+is_fix_trained_classifier: True 
+is_unfix_O_classifier: False
+
+
+
