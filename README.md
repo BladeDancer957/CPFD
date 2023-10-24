@@ -54,7 +54,7 @@ Then, the results as well as the model checkpoint will be saved automatically in
 ```
 @inproceedings{zhang2023cpfd,
   title={Continual Named Entity Recognition without Catastrophic Forgetting},
-  author={Duzhen Zhang, Wei Cong, Jiahua Dong, Yahan Yu, Xiuyi Chen, Yonggang Zhang, Zhen Fang},
+  author={Zhang, Duzhen and Cong, Wei and Dong, Jiahua and Yu, Yahan and Chen, Xiuyi and Zhang, Yonggang and Fang, Zhen},
   booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year={2023}
 }
