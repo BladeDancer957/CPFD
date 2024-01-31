@@ -6,6 +6,7 @@ This repository contains all of our source code. We sincerely thank the help of 
 - *bert-base-cased/*: the directory of configurations and PyTorch pretrained model for bert-base-cased
 - *config/* : the directory of configurations for our CPFD method
 - *datasets/* : the directory of datasets
+- *experiments/* : the directory of training logs from different runs
 - *src/* : the directory of the source code
 - *main_CL.py* : the python file to be executed
 ```
@@ -20,6 +21,9 @@ This repository contains all of our source code. We sincerely thank the help of 
 │       ├── conll2003
 │       ├── i2b2
 │       └── ontonotes5
+├── experiments
+│   └── result_analyze.py
+|   └── xxx.pth
 ├── main_CL.py
 └── src
     ├── config.py
@@ -39,6 +43,8 @@ transformers       4.14.1
 ```
 
 Download [bert-base-cased](https://huggingface.co/bert-base-cased/tree/main) to the directory of *bert-base-cased/*
+
+Download [base models](https://drive.google.com/file/d/1FMBVDbyYrPHAnek8MWL-cjG7YVnTVZ5I/view?usp=sharing) to the directory of *experiments/*
 
 ## Step 2: Run main_CL.py
 Specify your configurations (e.g., *./config/i2b2/fg_8_pg_2/CPFD.yaml*) and run the following command 
